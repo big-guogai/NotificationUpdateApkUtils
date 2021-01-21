@@ -14,6 +14,11 @@
 使用方法请看官方文档，这个工具主要实现了下载功能，非常好用，实现了断点续传功能
 
 代码呢我贴出来了，直接下载或者复制到你的java文件里，建议仅做参考，我也是半罐水
+首先在build.gradle导包（两个工具类的文档都有说，按照上面步骤就行）
+
+    implementation 'com.teprinciple:updateapputilsx:2.3.0'
+    implementation 'com.liulishuo.filedownloader:library:1.7.7'
+    
 当前更新工具类需要在application的oncreate方法中实例化
 
     public static NotificationUpdateApkUtils notificationUpdateApkUtils;
@@ -23,4 +28,4 @@
 
     MyApplication.notificationUpdateApkUtils.updata();
     
-代码里写了获取通知权限
+代码里写了获取通知权限的方法，xml文件是我自定义的弹窗和通知栏，可以自己修改
